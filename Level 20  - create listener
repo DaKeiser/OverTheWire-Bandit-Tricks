@@ -2,4 +2,5 @@ For this level, you're going to create a listener port. Then you run ./suconnect
 You can use nc -l -p (some port number you want to create) to make the listening port.
 Then run suconnect on it. And enter the password
 
-You have to do nc -l -p in one terminal and ./suconnect in another terminal, for some reason.
+You have to do nc -l -p in one terminal and ./suconnect in another terminal. The terminal which creates the connections takes in the passcode you have typed and then sends a signal back to the listener which is running ./suconnect. This checks for the password and then authorises whether the password is correct or incorrect.
+If correct then the password is shown on the server terminal.
